@@ -1,5 +1,4 @@
-﻿
-namespace Wille_s_MC_Launcher
+﻿namespace Wille_s_MC_Launcher
 {
     partial class Form1
     {
@@ -39,9 +38,9 @@ namespace Wille_s_MC_Launcher
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gOfflineLogin = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnOfflineLogin = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.gMojangLogin.SuspendLayout();
             this.gOfflineLogin.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +62,9 @@ namespace Wille_s_MC_Launcher
             this.guna2GradientButton1.Text = "Wille\'s MC Launcher v1.0.0.0";
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.guna2GradientButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.guna2GradientButton1_MouseDown);
+            this.guna2GradientButton1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.guna2GradientButton1_MouseMove);
+            this.guna2GradientButton1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.guna2GradientButton1_MouseUp);
             // 
             // btnClose
             // 
@@ -206,32 +208,6 @@ namespace Wille_s_MC_Launcher
             this.gOfflineLogin.TabIndex = 22;
             this.gOfflineLogin.Text = "Play with offline account";
             // 
-            // btnOfflineLogin
-            // 
-            this.btnOfflineLogin.CheckedState.Parent = this.btnOfflineLogin;
-            this.btnOfflineLogin.CustomImages.Parent = this.btnOfflineLogin;
-            this.btnOfflineLogin.FillColor = System.Drawing.Color.White;
-            this.btnOfflineLogin.Font = new System.Drawing.Font("Arial", 9F);
-            this.btnOfflineLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnOfflineLogin.HoverState.Parent = this.btnOfflineLogin;
-            this.btnOfflineLogin.Location = new System.Drawing.Point(10, 87);
-            this.btnOfflineLogin.Name = "btnOfflineLogin";
-            this.btnOfflineLogin.ShadowDecoration.Parent = this.btnOfflineLogin;
-            this.btnOfflineLogin.Size = new System.Drawing.Size(380, 29);
-            this.btnOfflineLogin.TabIndex = 16;
-            this.btnOfflineLogin.Text = "Play";
-            this.btnOfflineLogin.Click += new System.EventHandler(this.btnOfflineLogin_Click);
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Arial", 9F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(7, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 18);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Username:";
-            // 
             // txtUsername
             // 
             this.txtUsername.BorderColor = System.Drawing.Color.White;
@@ -257,6 +233,32 @@ namespace Wille_s_MC_Launcher
             this.txtUsername.ShadowDecoration.Parent = this.txtUsername;
             this.txtUsername.Size = new System.Drawing.Size(318, 29);
             this.txtUsername.TabIndex = 18;
+            // 
+            // btnOfflineLogin
+            // 
+            this.btnOfflineLogin.CheckedState.Parent = this.btnOfflineLogin;
+            this.btnOfflineLogin.CustomImages.Parent = this.btnOfflineLogin;
+            this.btnOfflineLogin.FillColor = System.Drawing.Color.White;
+            this.btnOfflineLogin.Font = new System.Drawing.Font("Arial", 9F);
+            this.btnOfflineLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnOfflineLogin.HoverState.Parent = this.btnOfflineLogin;
+            this.btnOfflineLogin.Location = new System.Drawing.Point(10, 87);
+            this.btnOfflineLogin.Name = "btnOfflineLogin";
+            this.btnOfflineLogin.ShadowDecoration.Parent = this.btnOfflineLogin;
+            this.btnOfflineLogin.Size = new System.Drawing.Size(380, 29);
+            this.btnOfflineLogin.TabIndex = 16;
+            this.btnOfflineLogin.Text = "Play";
+            this.btnOfflineLogin.Click += new System.EventHandler(this.btnOfflineLogin_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Arial", 9F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(7, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 18);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Username:";
             // 
             // Form1
             // 

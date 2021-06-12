@@ -2,6 +2,8 @@
 using CmlLib.Core.Auth;
 using CmlLib.Core.Installer;
 using CmlLib.Core.Files;
+using CmlLib.Core.Downloader;
+using CmlLibWinFormSample;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -9,8 +11,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CmlLib.Core.Downloader;
-using CmlLibWinFormSample;
+using System.Drawing;
 
 namespace Wille_s_MC_Launcher
 {
@@ -25,6 +26,8 @@ namespace Wille_s_MC_Launcher
         CMLauncher launcher;
         readonly MSession session;
         MinecraftPath gamePath;
+        private bool mouseDown;
+        private Point lastLocation;
 
         bool useMJava = true;
         string javaPath = "java.exe";
@@ -172,7 +175,6 @@ namespace Wille_s_MC_Launcher
         private void setUIEnabled(bool value)
         {
             gMojangLogin.Enabled = value;
-            guna2GroupBox1.Enabled = value;
             guna2GroupBox2.Enabled = value;
         }
 
@@ -266,6 +268,28 @@ namespace Wille_s_MC_Launcher
                 }));
             }).Start();
             */
+        }
+
+        private void guna2GradientButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void guna2GradientButton1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void guna2GradientButton1_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

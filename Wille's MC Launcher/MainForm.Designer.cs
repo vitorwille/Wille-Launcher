@@ -30,7 +30,6 @@ namespace Wille_s_MC_Launcher
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.gMojangLogin = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnChangeJava = new Guna.UI2.WinForms.Guna2Button();
             this.lbJavaPath = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,10 +42,9 @@ namespace Wille_s_MC_Launcher
             this.btnRefreshVersion = new Guna.UI2.WinForms.Guna2Button();
             this.btnSetLastVersion = new Guna.UI2.WinForms.Guna2Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.cbVersion = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Btn_Launch = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.gMojangLogin = new Guna.UI2.WinForms.Guna2GroupBox();
             this.TxtXmx = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtXms = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,30 +56,9 @@ namespace Wille_s_MC_Launcher
             this.Pb_File = new System.Windows.Forms.ProgressBar();
             this.Pb_Progress = new System.Windows.Forms.ProgressBar();
             this.Lv_Status = new System.Windows.Forms.Label();
-            this.gMojangLogin.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
+            this.gMojangLogin.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // gMojangLogin
-            // 
-            this.gMojangLogin.BorderColor = System.Drawing.Color.White;
-            this.gMojangLogin.Controls.Add(this.btnChangeJava);
-            this.gMojangLogin.Controls.Add(this.lbJavaPath);
-            this.gMojangLogin.Controls.Add(this.label1);
-            this.gMojangLogin.Controls.Add(this.label2);
-            this.gMojangLogin.Controls.Add(this.btnChangePath);
-            this.gMojangLogin.Controls.Add(this.txtPath);
-            this.gMojangLogin.CustomBorderColor = System.Drawing.Color.White;
-            this.gMojangLogin.FillColor = System.Drawing.Color.Black;
-            this.gMojangLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gMojangLogin.ForeColor = System.Drawing.Color.Black;
-            this.gMojangLogin.Location = new System.Drawing.Point(7, 39);
-            this.gMojangLogin.Name = "gMojangLogin";
-            this.gMojangLogin.ShadowDecoration.Parent = this.gMojangLogin;
-            this.gMojangLogin.Size = new System.Drawing.Size(346, 196);
-            this.gMojangLogin.TabIndex = 20;
-            this.gMojangLogin.Text = "Path Configuration";
             // 
             // btnChangeJava
             // 
@@ -91,10 +68,10 @@ namespace Wille_s_MC_Launcher
             this.btnChangeJava.Font = new System.Drawing.Font("Arial", 9F);
             this.btnChangeJava.ForeColor = System.Drawing.Color.Black;
             this.btnChangeJava.HoverState.Parent = this.btnChangeJava;
-            this.btnChangeJava.Location = new System.Drawing.Point(7, 154);
+            this.btnChangeJava.Location = new System.Drawing.Point(7, 238);
             this.btnChangeJava.Name = "btnChangeJava";
             this.btnChangeJava.ShadowDecoration.Parent = this.btnChangeJava;
-            this.btnChangeJava.Size = new System.Drawing.Size(331, 29);
+            this.btnChangeJava.Size = new System.Drawing.Size(684, 29);
             this.btnChangeJava.TabIndex = 25;
             this.btnChangeJava.Text = "Change Java version";
             // 
@@ -102,7 +79,7 @@ namespace Wille_s_MC_Launcher
             // 
             this.lbJavaPath.Font = new System.Drawing.Font("Arial", 9F);
             this.lbJavaPath.ForeColor = System.Drawing.Color.White;
-            this.lbJavaPath.Location = new System.Drawing.Point(43, 133);
+            this.lbJavaPath.Location = new System.Drawing.Point(48, 217);
             this.lbJavaPath.Name = "lbJavaPath";
             this.lbJavaPath.Size = new System.Drawing.Size(295, 18);
             this.lbJavaPath.TabIndex = 24;
@@ -112,7 +89,7 @@ namespace Wille_s_MC_Launcher
             // 
             this.label1.Font = new System.Drawing.Font("Arial", 9F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 133);
+            this.label1.Location = new System.Drawing.Point(7, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 18);
             this.label1.TabIndex = 23;
@@ -122,9 +99,9 @@ namespace Wille_s_MC_Launcher
             // 
             this.label2.Font = new System.Drawing.Font("Arial", 9F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 45);
+            this.label2.Location = new System.Drawing.Point(7, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 18);
+            this.label2.Size = new System.Drawing.Size(73, 18);
             this.label2.TabIndex = 22;
             this.label2.Text = "Game path:";
             // 
@@ -136,10 +113,10 @@ namespace Wille_s_MC_Launcher
             this.btnChangePath.Font = new System.Drawing.Font("Arial", 9F);
             this.btnChangePath.ForeColor = System.Drawing.Color.Black;
             this.btnChangePath.HoverState.Parent = this.btnChangePath;
-            this.btnChangePath.Location = new System.Drawing.Point(7, 101);
+            this.btnChangePath.Location = new System.Drawing.Point(7, 185);
             this.btnChangePath.Name = "btnChangePath";
             this.btnChangePath.ShadowDecoration.Parent = this.btnChangePath;
-            this.btnChangePath.Size = new System.Drawing.Size(331, 29);
+            this.btnChangePath.Size = new System.Drawing.Size(684, 29);
             this.btnChangePath.TabIndex = 16;
             this.btnChangePath.Text = "Change Minecraft path";
             // 
@@ -162,13 +139,13 @@ namespace Wille_s_MC_Launcher
             this.txtPath.ForeColor = System.Drawing.Color.White;
             this.txtPath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPath.HoverState.Parent = this.txtPath;
-            this.txtPath.Location = new System.Drawing.Point(7, 66);
+            this.txtPath.Location = new System.Drawing.Point(99, 150);
             this.txtPath.Name = "txtPath";
             this.txtPath.PasswordChar = '\0';
             this.txtPath.PlaceholderText = "";
             this.txtPath.SelectedText = "";
             this.txtPath.ShadowDecoration.Parent = this.txtPath;
-            this.txtPath.Size = new System.Drawing.Size(331, 29);
+            this.txtPath.Size = new System.Drawing.Size(592, 29);
             this.txtPath.TabIndex = 18;
             // 
             // btnClose
@@ -203,24 +180,29 @@ namespace Wille_s_MC_Launcher
             this.guna2GradientButton1.TabIndex = 21;
             this.guna2GradientButton1.Text = "Wille\'s MC Launcher v1.0.0.0";
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.guna2GradientButton1_MouseDown);
+            this.guna2GradientButton1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.guna2GradientButton1_MouseMove);
+            this.guna2GradientButton1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.guna2GradientButton1_MouseUp);
             // 
             // guna2GroupBox2
             // 
             this.guna2GroupBox2.BorderColor = System.Drawing.Color.White;
+            this.guna2GroupBox2.Controls.Add(this.Pb_Progress);
+            this.guna2GroupBox2.Controls.Add(this.Pb_File);
+            this.guna2GroupBox2.Controls.Add(this.Lv_Status);
             this.guna2GroupBox2.Controls.Add(this.btnRefreshVersion);
             this.guna2GroupBox2.Controls.Add(this.btnSetLastVersion);
             this.guna2GroupBox2.Controls.Add(this.label6);
-            this.guna2GroupBox2.Controls.Add(this.guna2Button1);
             this.guna2GroupBox2.Controls.Add(this.cbVersion);
             this.guna2GroupBox2.Controls.Add(this.Btn_Launch);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.White;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Black;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(7, 242);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(7, 38);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(698, 164);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(698, 161);
             this.guna2GroupBox2.TabIndex = 27;
             this.guna2GroupBox2.Text = "Launch Minecraft!";
             // 
@@ -267,22 +249,6 @@ namespace Wille_s_MC_Launcher
             this.label6.Text = "Version:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Arial", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(7, 123);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(684, 29);
-            this.guna2Button1.TabIndex = 28;
-            this.guna2Button1.Text = "Install Forge (disabled)";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
             // cbVersion
             // 
             this.cbVersion.BackColor = System.Drawing.Color.Transparent;
@@ -320,27 +286,33 @@ namespace Wille_s_MC_Launcher
             this.Btn_Launch.Text = "Launch!";
             this.Btn_Launch.Click += new System.EventHandler(this.Btn_Launch_Click);
             // 
-            // guna2GroupBox1
+            // gMojangLogin
             // 
-            this.guna2GroupBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Controls.Add(this.TxtXmx);
-            this.guna2GroupBox1.Controls.Add(this.label5);
-            this.guna2GroupBox1.Controls.Add(this.txtXms);
-            this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.Controls.Add(this.cbSkipHashCheck);
-            this.guna2GroupBox1.Controls.Add(this.cbSkipAssets);
-            this.guna2GroupBox1.Controls.Add(this.rbSequenceDownload);
-            this.guna2GroupBox1.Controls.Add(this.rbParallelDownload);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(359, 39);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(346, 196);
-            this.guna2GroupBox1.TabIndex = 26;
-            this.guna2GroupBox1.Text = "Options";
+            this.gMojangLogin.BorderColor = System.Drawing.Color.White;
+            this.gMojangLogin.Controls.Add(this.btnChangeJava);
+            this.gMojangLogin.Controls.Add(this.TxtXmx);
+            this.gMojangLogin.Controls.Add(this.lbJavaPath);
+            this.gMojangLogin.Controls.Add(this.label5);
+            this.gMojangLogin.Controls.Add(this.label1);
+            this.gMojangLogin.Controls.Add(this.txtXms);
+            this.gMojangLogin.Controls.Add(this.btnChangePath);
+            this.gMojangLogin.Controls.Add(this.label2);
+            this.gMojangLogin.Controls.Add(this.txtPath);
+            this.gMojangLogin.Controls.Add(this.label4);
+            this.gMojangLogin.Controls.Add(this.cbSkipHashCheck);
+            this.gMojangLogin.Controls.Add(this.cbSkipAssets);
+            this.gMojangLogin.Controls.Add(this.rbSequenceDownload);
+            this.gMojangLogin.Controls.Add(this.rbParallelDownload);
+            this.gMojangLogin.CustomBorderColor = System.Drawing.Color.White;
+            this.gMojangLogin.FillColor = System.Drawing.Color.Black;
+            this.gMojangLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gMojangLogin.ForeColor = System.Drawing.Color.Black;
+            this.gMojangLogin.Location = new System.Drawing.Point(7, 205);
+            this.gMojangLogin.Name = "gMojangLogin";
+            this.gMojangLogin.ShadowDecoration.Parent = this.gMojangLogin;
+            this.gMojangLogin.Size = new System.Drawing.Size(698, 278);
+            this.gMojangLogin.TabIndex = 26;
+            this.gMojangLogin.Text = "Options";
             // 
             // TxtXmx
             // 
@@ -361,21 +333,21 @@ namespace Wille_s_MC_Launcher
             this.TxtXmx.ForeColor = System.Drawing.Color.White;
             this.TxtXmx.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TxtXmx.HoverState.Parent = this.TxtXmx;
-            this.TxtXmx.Location = new System.Drawing.Point(89, 148);
+            this.TxtXmx.Location = new System.Drawing.Point(99, 114);
             this.TxtXmx.Name = "TxtXmx";
             this.TxtXmx.PasswordChar = '\0';
             this.TxtXmx.PlaceholderText = "";
             this.TxtXmx.SelectedText = "";
             this.TxtXmx.SelectionStart = 4;
             this.TxtXmx.ShadowDecoration.Parent = this.TxtXmx;
-            this.TxtXmx.Size = new System.Drawing.Size(250, 29);
+            this.TxtXmx.Size = new System.Drawing.Size(592, 29);
             this.TxtXmx.TabIndex = 32;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Arial", 9F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(4, 154);
+            this.label5.Location = new System.Drawing.Point(7, 114);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 18);
             this.label5.TabIndex = 31;
@@ -400,20 +372,20 @@ namespace Wille_s_MC_Launcher
             this.txtXms.ForeColor = System.Drawing.Color.White;
             this.txtXms.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtXms.HoverState.Parent = this.txtXms;
-            this.txtXms.Location = new System.Drawing.Point(89, 113);
+            this.txtXms.Location = new System.Drawing.Point(99, 79);
             this.txtXms.Name = "txtXms";
             this.txtXms.PasswordChar = '\0';
             this.txtXms.PlaceholderText = "";
             this.txtXms.SelectedText = "";
             this.txtXms.ShadowDecoration.Parent = this.txtXms;
-            this.txtXms.Size = new System.Drawing.Size(250, 29);
+            this.txtXms.Size = new System.Drawing.Size(592, 29);
             this.txtXms.TabIndex = 26;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Arial", 9F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(4, 119);
+            this.label4.Location = new System.Drawing.Point(7, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 18);
             this.label4.TabIndex = 26;
@@ -423,7 +395,7 @@ namespace Wille_s_MC_Launcher
             // 
             this.cbSkipHashCheck.AutoSize = true;
             this.cbSkipHashCheck.ForeColor = System.Drawing.Color.White;
-            this.cbSkipHashCheck.Location = new System.Drawing.Point(212, 83);
+            this.cbSkipHashCheck.Location = new System.Drawing.Point(514, 58);
             this.cbSkipHashCheck.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbSkipHashCheck.Name = "cbSkipHashCheck";
             this.cbSkipHashCheck.Size = new System.Drawing.Size(127, 19);
@@ -435,7 +407,7 @@ namespace Wille_s_MC_Launcher
             // 
             this.cbSkipAssets.AutoSize = true;
             this.cbSkipAssets.ForeColor = System.Drawing.Color.White;
-            this.cbSkipAssets.Location = new System.Drawing.Point(7, 83);
+            this.cbSkipAssets.Location = new System.Drawing.Point(372, 58);
             this.cbSkipAssets.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbSkipAssets.Name = "cbSkipAssets";
             this.cbSkipAssets.Size = new System.Drawing.Size(138, 19);
@@ -447,7 +419,7 @@ namespace Wille_s_MC_Launcher
             // 
             this.rbSequenceDownload.AutoSize = true;
             this.rbSequenceDownload.ForeColor = System.Drawing.Color.White;
-            this.rbSequenceDownload.Location = new System.Drawing.Point(7, 58);
+            this.rbSequenceDownload.Location = new System.Drawing.Point(65, 57);
             this.rbSequenceDownload.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbSequenceDownload.Name = "rbSequenceDownload";
             this.rbSequenceDownload.Size = new System.Drawing.Size(140, 19);
@@ -460,7 +432,7 @@ namespace Wille_s_MC_Launcher
             this.rbParallelDownload.AutoSize = true;
             this.rbParallelDownload.Checked = true;
             this.rbParallelDownload.ForeColor = System.Drawing.Color.White;
-            this.rbParallelDownload.Location = new System.Drawing.Point(180, 58);
+            this.rbParallelDownload.Location = new System.Drawing.Point(209, 57);
             this.rbParallelDownload.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rbParallelDownload.Name = "rbParallelDownload";
             this.rbParallelDownload.Size = new System.Drawing.Size(159, 19);
@@ -472,29 +444,30 @@ namespace Wille_s_MC_Launcher
             // Pb_File
             // 
             this.Pb_File.ForeColor = System.Drawing.Color.BlueViolet;
-            this.Pb_File.Location = new System.Drawing.Point(7, 449);
+            this.Pb_File.Location = new System.Drawing.Point(7, 123);
             this.Pb_File.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Pb_File.Name = "Pb_File";
-            this.Pb_File.Size = new System.Drawing.Size(698, 25);
+            this.Pb_File.Size = new System.Drawing.Size(340, 17);
             this.Pb_File.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.Pb_File.TabIndex = 28;
             // 
             // Pb_Progress
             // 
             this.Pb_Progress.ForeColor = System.Drawing.Color.BlueViolet;
-            this.Pb_Progress.Location = new System.Drawing.Point(7, 480);
+            this.Pb_Progress.Location = new System.Drawing.Point(351, 123);
             this.Pb_Progress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Pb_Progress.Name = "Pb_Progress";
-            this.Pb_Progress.Size = new System.Drawing.Size(698, 25);
+            this.Pb_Progress.Size = new System.Drawing.Size(340, 17);
             this.Pb_Progress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.Pb_Progress.TabIndex = 29;
             // 
             // Lv_Status
             // 
-            this.Lv_Status.Location = new System.Drawing.Point(7, 433);
+            this.Lv_Status.ForeColor = System.Drawing.Color.White;
+            this.Lv_Status.Location = new System.Drawing.Point(7, 143);
             this.Lv_Status.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lv_Status.Name = "Lv_Status";
-            this.Lv_Status.Size = new System.Drawing.Size(698, 13);
+            this.Lv_Status.Size = new System.Drawing.Size(684, 13);
             this.Lv_Status.TabIndex = 30;
             this.Lv_Status.Text = "Ready";
             this.Lv_Status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -504,15 +477,11 @@ namespace Wille_s_MC_Launcher
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(712, 513);
-            this.Controls.Add(this.Lv_Status);
-            this.Controls.Add(this.Pb_Progress);
-            this.Controls.Add(this.Pb_File);
+            this.ClientSize = new System.Drawing.Size(712, 491);
             this.Controls.Add(this.guna2GroupBox2);
-            this.Controls.Add(this.guna2GroupBox1);
+            this.Controls.Add(this.gMojangLogin);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.gMojangLogin);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -520,17 +489,14 @@ namespace Wille_s_MC_Launcher
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wille\'s MC Launcher v1.0.0.0";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
-            this.gMojangLogin.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
+            this.gMojangLogin.ResumeLayout(false);
+            this.gMojangLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GroupBox gMojangLogin;
         private Guna.UI2.WinForms.Guna2TextBox txtPath;
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
@@ -540,7 +506,7 @@ namespace Wille_s_MC_Launcher
         private System.Windows.Forms.Label lbJavaPath;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2GroupBox gMojangLogin;
         private System.Windows.Forms.CheckBox cbSkipHashCheck;
         private System.Windows.Forms.CheckBox cbSkipAssets;
         private System.Windows.Forms.RadioButton rbSequenceDownload;
@@ -556,7 +522,6 @@ namespace Wille_s_MC_Launcher
         private Guna.UI2.WinForms.Guna2Button btnRefreshVersion;
         private Guna.UI2.WinForms.Guna2Button btnSetLastVersion;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ComboBox cbVersion;
     }
 }
